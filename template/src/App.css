@@ -1,0 +1,80 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app-content {
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.5rem;
+}
+
+.info {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+}
+
+.info p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card li:last-child {
+  border-bottom: none;
+}
+
+code {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+

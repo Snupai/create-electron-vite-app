@@ -1,0 +1,21 @@
+{
+  "name": "create-electron-vite",
+  "version": "1.0.0",
+  "description": "Scaffold a new Electron + Vite + React + TypeScript app",
+  "type": "module",
+  "bin": {
+    "create-electron-vite": "index.js"
+  },
+  "packageManager": "pnpm@10.18.3",
+  "author": "Snupai",
+  "license": "MIT",
+  "keywords": [
+    "electron",
+    "vite",
+    "react",
+    "typescript",
+    "cli",
+    "scaffold",
+    "template"
+  ]
+}
