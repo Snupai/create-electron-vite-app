@@ -7,10 +7,43 @@
   "pnpm": {
     "onlyBuiltDependencies": ["electron"]
   },
+  "build": {
+    "appId": "com.example.electron-vite-app",
+    "productName": "Electron Vite App",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "package.json"
+    ],
+    "linux": {
+      "target": ["AppImage", "deb", "rpm"]
+    },
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": ["universal"]
+        },
+        {
+          "target": "dmg",
+          "arch": ["arm64"]
+        }
+      ],
+      "category": "public.app-category.utilities"
+    },
+    "win": {
+      "target": ["nsis", "portable"]
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build && node build.mjs",
     "build:electron": "node build.mjs",
+    "build:linux": "pnpm build && electron-builder --linux",
+    "build:macos": "pnpm build && electron-builder --mac",
+    "build:windows": "pnpm build && electron-builder --win",
     "start": "pnpm build && electron ."
   },
   "author": "",
@@ -24,6 +57,7 @@
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
     "electron": "^38.3.0",
+    "electron-builder": "^25.1.8",
     "esbuild": "^0.25.11",
     "typescript": "^5.7.3",
     "vite": "^6.0.11"
