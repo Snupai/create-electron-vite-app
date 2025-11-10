@@ -7,7 +7,7 @@ A CLI tool to quickly scaffold a new Electron + Vite + React + TypeScript applic
 Use `npx` to run the CLI directly from GitHub:
 
 ```bash
-npx github:Snupai/electron-vite-template
+npx github:Snupai/create-electron-vite-app
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ When you run the command, the CLI will:
 ### Example
 
 ```bash
-npx github:Snupai/electron-vite-template my-awesome-app
+npx github:Snupai/create-electron-vite-app my-awesome-app
 ```
 
 ## What You Get
